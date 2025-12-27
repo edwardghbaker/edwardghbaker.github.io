@@ -1,4 +1,71 @@
-"Hello World"
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Edward G. Baker — Portfolio & CV</title>
+	<meta name="description" content="Edward G. Baker — software engineer. Portfolio, CV, projects and contact.">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1 class="site-title">Edward G. Baker</h1>
+			<p class="site-subtitle">Software Engineer — Full‑stack web & tooling</p>
+			<nav class="nav">
+				<a href="#about">About</a>
+				<a href="#cv">CV</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section id="about" class="card">
+			<h2>About</h2>
+			<p>Hello — I'm Edward. I build reliable, maintainable web apps and developer tools. I enjoy learning new stacks and shipping quality products.</p>
+			<p>Edit this section to add a short professional summary, technologies you use, and your target roles.</p>
+		</section>
+
+		<section id="cv" class="card">
+			<h2>Curriculum Vitae</h2>
+			<p>Download a formatted CV or view it in the browser:</p>
+			<p>
+				<a class="btn" href="cv.pdf" download>Download CV (PDF)</a>
+				<a class="btn btn-outline" href="cv.html">View CV (HTML)</a>
+			</p>
+			<p>Replace <em>cv.pdf</em> with your real PDF in the project root to make the download work.</p>
+		</section>
+
+		<section id="projects" class="card">
+			<h2>Selected Projects</h2>
+			<ul>
+				<li><strong>Project A</strong> — short 1‑line description and link.</li>
+				<li><strong>Project B</strong> — short 1‑line description and link.</li>
+			</ul>
+			<p>Add links to GitHub, live demos, and a short impact-focused blurb for each project.</p>
+		</section>
+
+		<section id="contact" class="card">
+			<h2>Contact</h2>
+			<p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+			<p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">yourprofile</a></p>
+			<p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">yourusername</a></p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<small>© <span id="year"></span> Edward G. Baker — Built with a simple static site.</small>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
 
 
 
