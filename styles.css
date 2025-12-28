@@ -17,3 +17,22 @@ body{font-family: "Times New Roman", Times, serif; margin:0; background:var(--bg
 .site-footer{padding:16px 0;color:var(--muted);text-align:center;border-top:1px solid #f0f0f0}
 @media(min-width:800px){.site-title{font-size:32px}.container{padding:0}}
 @media print{body{background:white;color:black} .nav, .site-footer{display:none} .card{border:none;background:transparent}}
+
+/* CV page styles (scoped to body.cv) - simplified and moved from cv.html */
+body.cv { background: #fff; color: #000; font-family: "Times New Roman", Times, serif; }
+body.cv .container { max-width: 760px; margin: 18px auto; padding: 18px; }
+body.cv .header { text-align: center; margin-bottom: 8px }
+body.cv .name { font-size: 26px; font-weight: 700; margin: 0 }
+body.cv .subtitle { color: #666666; font-size: 15px; margin: 6px 0 }
+body.cv .contact { margin: 8px 0; font-size: 11pt }
+body.cv a { color: #0563c1; text-decoration: underline }
+body.cv .lead { margin: 14px 0 18px; line-height: 1.35 }
+body.cv .section-title { font-size: 14pt; font-weight: 700; border-bottom: 1px solid #000; padding-bottom: 6px; margin-top: 18px }
+body.cv .skills { margin: 8px 0 12px }
+body.cv table.info { width: 100%; border-collapse: collapse; margin-top: 8px }
+body.cv .col-left { width: 30%; vertical-align: top; font-weight: 700; padding: 6px 8px 6px 0 }
+body.cv .col-right { width: 70%; vertical-align: top; padding: 6px 0 }
+body.cv .small { font-size: 11pt }
+
+/* Minimal print-friendly tweaks for CV */
+@media print { body.cv a { color: #000; text-decoration: none } }
