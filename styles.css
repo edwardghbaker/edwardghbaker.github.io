@@ -1,17 +1,19 @@
 :root{
-  --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7c5cff; --glass: rgba(255,255,255,0.03);
+  --bg: #ffffff;
+  --muted: #666666;
+  --accent: #444444;
 }
+
 *{box-sizing:border-box}
-body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#e6eef6; line-height:1.5}
-.container{max-width:900px;margin:36px auto;padding:0 20px}
-.site-header{background:linear-gradient(180deg, rgba(124,92,255,0.12), transparent);padding:36px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
-.site-title{margin:0;font-size:28px}
-.site-subtitle{margin:4px 0 12px;color:var(--muted)}
+body{font-family: "Times New Roman", Times, serif; margin:0; background:var(--bg); color:#222; line-height:1.5}
+.container{max-width:900px;margin:28px auto;padding:0 18px}
+.site-header{padding:24px 0;border-bottom:1px solid #e6e6e6}
+.site-title{margin:0;font-size:28px;color:#111}
+.site-subtitle{margin:6px 0 12px;color:var(--muted)}
 .nav a{color:var(--muted);margin-right:12px;text-decoration:none}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:10px;margin-bottom:18px;border:1px solid rgba(255,255,255,0.03)}
-.btn{display:inline-block;padding:8px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
-.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);margin-left:8px}
-.site-footer{padding:20px 0;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,0.02)}
-@media(min-width:800px){.site-title{font-size:34px}.container{padding:0}}
-/* Print-friendly CV view */
+.card{background:transparent;padding:18px;border-radius:6px;margin-bottom:16px;border-bottom:1px solid #f0f0f0}
+.btn{display:inline-block;padding:8px 12px;border-radius:6px;background:#f3f3f3;color:#111;text-decoration:none;border:1px solid #e0e0e0}
+.btn-outline{background:transparent;border:1px solid #ddd;color:var(--muted);margin-left:8px;padding:7px 11px}
+.site-footer{padding:16px 0;color:var(--muted);text-align:center;border-top:1px solid #f0f0f0}
+@media(min-width:800px){.site-title{font-size:32px}.container{padding:0}}
 @media print{body{background:white;color:black} .nav, .site-footer{display:none} .card{border:none;background:transparent}}
